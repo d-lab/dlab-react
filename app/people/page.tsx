@@ -1,6 +1,7 @@
 import peopleData from '@/data/people.json';
 import Image from 'next/image';
 import Link from 'next/link';
+import { withBasePath } from '@/lib/withBasePath';
 
 type Person = {
   name: string;
@@ -79,7 +80,7 @@ export default function PeoplePage() {
               >
                 <div className="relative w-36 h-36 sm:w-40 sm:h-40 mx-auto">
                   <Image
-                    src={person.image}
+                    src={withBasePath(person.image)}
                     alt={`Portrait of ${person.name}`}
                     fill
                     sizes="(max-width: 640px) 144px, 160px"

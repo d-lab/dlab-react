@@ -5,6 +5,9 @@ const repoName = repository.split('/')[1] || '';
 const basePath = isGithubActions && repoName ? `/${repoName}` : '';
 
 const nextConfig = {
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   output: 'export',
   basePath,
   assetPrefix: basePath ? `${basePath}/` : '',

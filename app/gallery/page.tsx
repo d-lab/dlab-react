@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { groupPictures, heroGroupPicture } from '@/data/groupPictures';
+import { withBasePath } from '@/lib/withBasePath';
 
 export const metadata: Metadata = {
   title: 'Gallery',
@@ -14,7 +15,7 @@ export default function GalleryPage() {
       <section className="relative isolate overflow-hidden rounded-3xl shadow-2xl">
         <div className="absolute inset-0">
           <Image
-            src={heroGroupPicture.src}
+            src={withBasePath(heroGroupPicture.src)}
             alt={heroGroupPicture.alt}
             fill
             priority
@@ -67,7 +68,7 @@ export default function GalleryPage() {
             >
               <div className="relative">
                 <Image
-                  src={picture.src}
+                  src={withBasePath(picture.src)}
                   alt={picture.alt}
                   width={picture.width}
                   height={picture.height}

@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { withBasePath } from '@/lib/withBasePath';
 
 const highlights = [
   { label: 'Focus', value: 'Responsible AI, education, and sociotechnical design' },
@@ -20,8 +21,8 @@ export default function SimpleHeroSection() {
   return (
     <section className="relative isolate w-full min-h-[78vh] overflow-hidden rounded-b-[2.25rem] sm:rounded-b-[3rem]">
       <Image
-        src='/images/group_pics/16.jpg'
-        alt='DLab group picture'
+        src={withBasePath('/images/group_pics/16.jpg')}
+        alt="DLab group picture"
         fill
         priority
         sizes="100vw"
