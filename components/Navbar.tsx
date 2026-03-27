@@ -39,6 +39,9 @@ export default function Navbar() {
             <Link href="/gallery" className="hover:text-yellow-300">
               Gallery
             </Link>
+            <Link href="/sponsors" className="hover:text-yellow-300">
+              Sponsors
+            </Link>
             <Link href="/blog" className="hover:text-yellow-300">
               Blog
             </Link>
@@ -87,6 +90,13 @@ export default function Navbar() {
               onClick={closeMenu}
             >
               Publications
+            </Link>
+            <Link
+              href="/sponsors"
+              className="block py-2 hover:text-yellow-300"
+              onClick={closeMenu}
+            >
+              Sponsors
             </Link>
             <Link
               href="/blog"
