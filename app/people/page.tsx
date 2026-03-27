@@ -70,8 +70,8 @@ export default function PeoplePage() {
       <section>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {people.map((person) => {
-            const hasWebsite = typeof person.website === 'string' && person.website.trim() !== '';
-            const website = hasWebsite ? person.website.trim() : undefined;
+            const normalizedWebsite = typeof person.website === 'string' ? person.website.trim() : '';
+            const website = normalizedWebsite.length > 0 ? normalizedWebsite : undefined;
             const extraAttributes = Object.entries(person).filter(([key, value]) => {
               if (RESERVED_FIELDS.has(key)) return false;
               if (value === undefined || value === null) return false;
