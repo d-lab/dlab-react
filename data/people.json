@@ -8,7 +8,7 @@
   },
   {
     "name": "Andrea Paganelli",
-    "role": "PhD Student",
+    "role": "Master Thesis Student",
     "image": "/images/people/Andrea_Paganelli_dlab.jpg"
   },
   {
@@ -52,5 +52,17 @@
     "name": "Shangqian Li",
     "role": "PhD Student",
     "image": "/images/people/Shangqian_Li_dlab.jpg"
+  },
+  {
+    "name": "Lei Han",
+    "role": "Alumni",
+    "isAlumni": true,
+    "image": "/images/people/placeholder.svg"
+  },
+  {
+    "name": "Tianwa Chen",
+    "role": "Alumni",
+    "isAlumni": true,
+    "image": "/images/people/placeholder.svg"
   }
 ]
