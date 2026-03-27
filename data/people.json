@@ -3,7 +3,8 @@
     "name": "Prof. Gianluca Demartini",
     "role": "Head of the Lab",
     "isHeadOfLab": true,
-    "image": "/images/people/Gianluca_Demartini_dlab.jpg"
+    "image": "/images/people/Gianluca_Demartini_dlab.jpg",
+    "website": "https://www.gianlucademartini.net/"
   },
   {
     "name": "Andrea Paganelli",
@@ -33,7 +34,8 @@
   {
     "name": "Pietro Bernardelle",
     "role": "PhD Student",
-    "image": "/images/people/Pietro_Bernardelle_dlab.jpg"
+    "image": "/images/people/Pietro_Bernardelle_dlab.jpg",
+    "website": "https://pietrobernardelle.github.io/"
   },
   {
     "name": "Samaneh Mohtadi",
@@ -43,7 +45,8 @@
   {
     "name": "Stefano Civelli",
     "role": "PhD Student",
-    "image": "/images/people/stefano_civelli_dlab.jpg"
+    "image": "/images/people/stefano_civelli_dlab.jpg",
+    "website": "https://stefanocivelli.com/"
   },
   {
     "name": "Shangqian Li",

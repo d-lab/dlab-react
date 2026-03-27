@@ -1,3 +1,5 @@
+'use client';
+
 import peopleData from '@/data/people.json';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,10 +12,11 @@ type Person = {
   isHeadOfLab?: boolean;
   email?: string;
   focus?: string;
+  website?: string;
   [key: string]: unknown;
 };
 
-const RESERVED_FIELDS = new Set(['name', 'role', 'image', 'isHeadOfLab', 'email', 'focus']);
+const RESERVED_FIELDS = new Set(['name', 'role', 'image', 'isHeadOfLab', 'email', 'focus', 'website']);
 
 const formatFieldLabel = (key: string) =>
   key
@@ -45,6 +48,11 @@ const getSortedPeople = (people: Person[]) =>
     return a.name.localeCompare(b.name);
   });
 
+const openWebsite = (website?: string) => {
+  if (!website) return;
+  window.open(website, '_blank', 'noopener,noreferrer');
+};
+
 export default function PeoplePage() {
   const people = getSortedPeople(peopleData as Person[]);
 
@@ -62,6 +70,8 @@ export default function PeoplePage() {
       <section>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {people.map((person) => {
+            const hasWebsite = typeof person.website === 'string' && person.website.trim() !== '';
+            const website = hasWebsite ? person.website.trim() : undefined;
             const extraAttributes = Object.entries(person).filter(([key, value]) => {
               if (RESERVED_FIELDS.has(key)) return false;
               if (value === undefined || value === null) return false;
@@ -72,11 +82,25 @@ export default function PeoplePage() {
             return (
               <article
                 key={person.name}
+                onClick={website ? () => openWebsite(website) : undefined}
+                onKeyDown={
+                  website
+                    ? (event) => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                          event.preventDefault();
+                          openWebsite(website);
+                        }
+                      }
+                    : undefined
+                }
+                role={website ? 'link' : undefined}
+                tabIndex={website ? 0 : undefined}
+                aria-label={website ? `Open ${person.name}'s personal website` : undefined}
                 className={`group rounded-2xl border p-6 bg-white/80 dark:bg-slate-950/40 backdrop-blur-sm shadow-sm transition-all duration-300 hover:shadow-md ${
                   person.isHeadOfLab
                     ? 'border-blue-200 dark:border-blue-800'
                     : 'border-slate-200 dark:border-slate-800'
-                }`}
+                } ${website ? 'cursor-pointer hover:-translate-y-0.5' : ''}`}
               >
                 <div className="relative w-36 h-36 sm:w-40 sm:h-40 mx-auto">
                   <Image
@@ -97,6 +121,7 @@ export default function PeoplePage() {
                   {person.email && (
                     <Link
                       href={`mailto:${person.email}`}
+                      onClick={(event) => event.stopPropagation()}
                       className="inline-block text-sm text-blue-700 dark:text-blue-300 hover:underline mt-4"
                     >
                       {person.email}
