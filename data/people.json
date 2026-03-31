@@ -19,12 +19,14 @@
   {
     "name": "Elyas Meguellati",
     "role": "PhD Student",
-    "image": "/images/people/Elyas_dlab.jpg"
+    "image": "/images/people/Elyas_dlab.jpg",
+    "website": "https://megzee.github.io/myBio"
   },
   {
     "name": "Farid Ariai",
     "role": "PhD Student",
-    "image": "/images/people/Farid_Ariai_dlab.jpg"
+    "image": "/images/people/Farid_Ariai_dlab.jpg",
+    "website": "https://farid-ariai.github.io/"
   },
   {
     "name": "Hongliang Ni",

@@ -19,6 +19,7 @@ export default function GalleryPage() {
             alt={heroGroupPicture.alt}
             fill
             priority
+            quality={75}
             sizes="(max-width: 1024px) 100vw, 1200px"
             className="object-cover object-center"
           />
@@ -61,7 +62,7 @@ export default function GalleryPage() {
         </div>
 
         <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
-          {groupPictures.map((picture, index) => (
+          {groupPictures.map((picture) => (
             <figure
               key={picture.id}
               className="group mb-4 break-inside-avoid overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm shadow-slate-900/5 dark:border-slate-700 dark:bg-slate-900/60"
@@ -72,7 +73,7 @@ export default function GalleryPage() {
                   alt={picture.alt}
                   width={picture.width}
                   height={picture.height}
-                  priority={index < 4}
+                  quality={70}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
                 />
