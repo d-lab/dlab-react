@@ -17,6 +17,12 @@ const sponsors: Sponsor[] = [
     logoScaleClass: 'scale-[1.05]',
   },
   {
+    name: 'Engineering and Physical Sciences Research Council (EPSRC)',
+    logo: '/images/dlab_sponsors/epsrc.png',
+    website: 'https://www.ukri.org/councils/epsrc/',
+    logoScaleClass: 'scale-[1.03]',
+  },
+  {
     name: 'European Commission',
     logo: '/images/dlab_sponsors/European_Commission.svg',
     website: 'https://commission.europa.eu/',
