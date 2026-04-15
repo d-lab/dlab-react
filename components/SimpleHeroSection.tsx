@@ -21,7 +21,7 @@ export default function SimpleHeroSection() {
   return (
     <section className="relative isolate w-full min-h-[78vh] overflow-hidden rounded-b-[2.25rem] sm:rounded-b-[3rem]">
       <Image
-        src={withBasePath('/images/group_pics/16.jpg')}
+        src={withBasePath('/images/group_pics/16.jpg')} //background in the homepage
         alt="DLab group picture"
         fill
         priority
@@ -35,20 +35,17 @@ export default function SimpleHeroSection() {
 
       <header className="relative mx-auto flex min-h-[78vh] w-full max-w-6xl items-center px-4 py-16 sm:px-6 lg:px-8">
         <div
-          className={`max-w-3xl text-white transition-all duration-700 ${
-            mounted ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-          }`}
+          className={`max-w-3xl text-white transition-all duration-700 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+            }`}
         >
           <p className="mb-5 inline-flex rounded-full border border-white/35 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.26em] backdrop-blur">
-            Digital Learning & AI Lab
+            Responsible AI Lab at The University of Queensland
           </p>
           <h1 className="text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-            Designing the future of learning through data, design, and dialogue.
+            Identifying the risks and harms of AI and building AI for public good.
           </h1>
           <p className="mt-6 max-w-2xl text-base text-slate-100/95 sm:text-lg md:text-xl">
-            DLab is an interdisciplinary research group exploring how people learn with and alongside intelligent
-            systems.
-          </p>
+            DLab is an interdisciplinary research group exploring how data, people, and AI affect each other.          </p>
 
           <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
             {highlights.map((item) => (

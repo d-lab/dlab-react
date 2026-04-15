@@ -18,22 +18,22 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dlab.example.com/'),
+  metadataBase: new URL('https://d-lab.github.io/'),
   title: {
-    default: 'DLab — Digital Learning & AI Lab',
+    default: 'DLab — Responsible AI Lab',
     template: '%s | DLab'
   },
-  description: 'DLab is a collaborative research group designing equitable futures of learning with data, design, and dialogue.',
-  keywords: ['DLab', 'digital learning lab', 'education research', 'responsible AI', 'learning analytics', 'human-centered computing'],
+  description: 'DLab is an interdisciplinary research group exploring how data, people, and AI affect each other.',
+  keywords: ['DLab', 'research lab', 'AI research', 'responsible AI', 'AI for public good', 'human-centered computing'],
   authors: [{ name: 'DLab' }],
   creator: 'DLab',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://dlab.example.com/',
+    url: 'https://d-lab.github.io/',
     siteName: 'DLab',
-    title: 'DLab — Digital Learning & AI Lab',
-    description: 'Interdisciplinary research group exploring data, design, and intelligent systems for learning.',
+    title: 'DLab — Responsible AI Lab',
+    description: 'Interdisciplinary research group exploring how data, people, and AI affect each other.',
     images: [
       {
         url: '/og-image.jpg',
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DLab — Digital Learning & AI Lab',
-    description: 'Research on the sociotechnical future of learning and intelligent systems.',
+    title: 'DLab — Responsible AI Lab',
+    description: 'Interdisciplinary research group exploring how data, people, and AI affect each other.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -94,12 +94,12 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ResearchOrganization",
               "name": "DLab",
-              "description": "DLab is a digital learning and AI research group advancing equitable, creative futures of education.",
-              "url": "https://dlab.example.com/",
+              "description": "Interdisciplinary research group exploring how data, people, and AI affect each other.",
+              "url": "https://d-lab.github.io/",
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "General enquiries",
-                "email": "hello@dlab.example.com"
+                "email": "demartini@acm.org"
               }
             })
           }}

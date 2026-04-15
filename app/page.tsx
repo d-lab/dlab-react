@@ -92,9 +92,8 @@ export default function Home() {
 
         <div
           ref={researchRef}
-          className={`transform transition-all duration-700 ease-out ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
+          className={`transform transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
         >
           <section className="w-full mb-16">
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
@@ -154,14 +153,14 @@ export default function Home() {
           <div>
             <h3 className="mb-2 text-2xl font-bold">Engage with DLab</h3>
             <p className="text-sm text-white/85 sm:text-base">
-              We partner with educators, communities, and organizations to build joyful and just futures of learning.
+              We partner with government, communities, and organizations to build safe and responsible AI systems.
             </p>
           </div>
           <div className="space-y-2 text-sm sm:text-base">
             <p className="font-semibold uppercase tracking-[0.2em] text-[#f1df97]">Join</p>
             <p className="text-white/90">Graduate students curious about sociotechnical research.</p>
             <p className="mt-4 font-semibold uppercase tracking-[0.2em] text-[#f1df97]">Collaborate</p>
-            <p className="text-white/90">Institutions seeking research-backed experimentation.</p>
+            <p className="text-white/90">Government agencies and organizations seeking research-backed experimentation.</p>
           </div>
           <div className="flex flex-col space-y-3">
             <Link

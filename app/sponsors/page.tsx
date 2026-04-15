@@ -56,7 +56,7 @@ const sponsors: Sponsor[] = [
 
 export const metadata: Metadata = {
   title: 'Sponsors',
-  description: 'Organizations and funding partners supporting DLab research.',
+  description: 'Organizations sponsoring and supporting DLab research.',
 };
 
 export default function SponsorsPage() {
@@ -111,9 +111,8 @@ export default function SponsorsPage() {
                       alt={`${sponsor.name} logo`}
                       fill
                       sizes="(max-width: 640px) 80vw, (max-width: 1024px) 42vw, 24vw"
-                      className={`object-contain ${
-                        sponsor.logoScaleClass ?? ''
-                      }`}
+                      className={`object-contain ${sponsor.logoScaleClass ?? ''
+                        }`}
                     />
                   </div>
                 </div>
