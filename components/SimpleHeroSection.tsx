@@ -6,9 +6,9 @@ import { useEffect, useState } from 'react';
 import { withBasePath } from '@/lib/withBasePath';
 
 const highlights = [
-  { label: 'Focus', value: 'Responsible AI, education, and sociotechnical design' },
+  { label: 'Focus', value: 'Responsible AI and sociotechnical design' },
   { label: 'Approach', value: 'Interdisciplinary collaboration with real-world partners' },
-  { label: 'Community', value: 'Researchers, students, and institutions shaping learning futures' },
+  { label: 'Community', value: 'Researchers, students, and institutions shaping the future of AI' },
 ];
 
 export default function SimpleHeroSection() {
@@ -21,7 +21,7 @@ export default function SimpleHeroSection() {
   return (
     <section className="relative isolate w-full min-h-[78vh] overflow-hidden rounded-b-[2.25rem] sm:rounded-b-[3rem]">
       <Image
-        src={withBasePath('/images/group_pics/16.jpg')} //background in the homepage
+        src={withBasePath('/images/group_pics/24-b.png')} //background in the homepage
         alt="DLab group picture"
         fill
         priority
@@ -39,10 +39,10 @@ export default function SimpleHeroSection() {
             }`}
         >
           <p className="mb-5 inline-flex rounded-full border border-white/35 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.26em] backdrop-blur">
-            Responsible AI Lab at The University of Queensland
+            Responsible AI Lab at The University of Queensland, Australia
           </p>
           <h1 className="text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-            Identifying the risks and harms of AI and building AI for public good.
+            Building AI for public good.
           </h1>
           <p className="mt-6 max-w-2xl text-base text-slate-100/95 sm:text-lg md:text-xl">
             DLab is an interdisciplinary research group exploring how data, people, and AI affect each other.          </p>
