@@ -14,6 +14,7 @@ export default function Blog() {
         The DLab is led by Prof. Gianluca Demartini at The University of Queensland, Australia.
       </p>
     </header>
+  );
 
 
 }
