@@ -1,10 +1,4 @@
-import type { Metadata } from 'next';
-import { withBasePath } from '@/lib/withBasePath';
 
-export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'An overview about DLab research mission and focus.',
-};
 
 export default function AboutUs() {
   return (
