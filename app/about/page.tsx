@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+import { withBasePath } from '@/lib/withBasePath';
 
 export const metadata: Metadata = {
   title: 'About Us',
