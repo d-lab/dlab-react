@@ -22,7 +22,7 @@ export default function PublicationsPage() {
         <p className="text-xs uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">DLab</p>
         <h1 className="text-4xl sm:text-5xl font-semibold text-slate-900 dark:text-slate-100 mt-3">Publications</h1>
         <p className="text-slate-600 dark:text-slate-300 max-w-3xl mt-4 leading-relaxed">
-          Publications from the lab, grouped by year. Data is loaded from a dedicated JSON source for easy updates.
+          Scientific publications from the DLab, grouped by year.
         </p>
       </header>
 

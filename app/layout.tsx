@@ -20,7 +20,7 @@ const quicksand = Quicksand({
 export const metadata: Metadata = {
   metadataBase: new URL('https://d-lab.github.io/'),
   title: {
-    default: 'DLab — Responsible AI Lab',
+    default: 'DLab — Responsible AI Research Lab',
     template: '%s | DLab'
   },
   description: 'DLab is an interdisciplinary research group exploring how data, people, and AI affect each other.',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://d-lab.github.io/',
     siteName: 'DLab',
-    title: 'DLab — Responsible AI Lab',
+    title: 'DLab — Responsible AI Research Lab',
     description: 'Interdisciplinary research group exploring how data, people, and AI affect each other.',
     images: [
       {
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DLab — Responsible AI Lab',
+    title: 'DLab — Responsible AI Research Lab',
     description: 'Interdisciplinary research group exploring how data, people, and AI affect each other.',
     images: ['/og-image.jpg'],
   },

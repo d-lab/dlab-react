@@ -157,9 +157,9 @@ export default function Home() {
             </p>
           </div>
           <div className="space-y-2 text-sm sm:text-base">
-            <p className="font-semibold uppercase tracking-[0.2em] text-[#f1df97]">Join</p>
+            <p className="font-semibold uppercase tracking-[0.2em] text-[#f1df97]"><a href="mailto:demartini@acm.org">Join</a></p>
             <p className="text-white/90">Graduate students curious about sociotechnical research.</p>
-            <p className="mt-4 font-semibold uppercase tracking-[0.2em] text-[#f1df97]">Collaborate</p>
+            <p className="mt-4 font-semibold uppercase tracking-[0.2em] text-[#f1df97]"><a href="mailto:demartini@acm.org">Collaborate</a></p>
             <p className="text-white/90">Government agencies and organizations seeking research-backed experimentation.</p>
           </div>
           <div className="flex flex-col space-y-3">
@@ -173,7 +173,7 @@ export default function Home() {
               href="/blog"
               className="inline-flex items-center justify-center rounded-full border border-white/60 px-5 py-3 font-semibold text-white transition-colors hover:bg-white/10"
             >
-              Read lab stories
+              Read DLab stories
             </Link>
             <Link
               href="/gallery"

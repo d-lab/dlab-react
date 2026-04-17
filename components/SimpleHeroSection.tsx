@@ -39,7 +39,7 @@ export default function SimpleHeroSection() {
             }`}
         >
           <p className="mb-5 inline-flex rounded-full border border-white/35 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.26em] backdrop-blur">
-            Responsible AI Lab at The University of Queensland, Australia
+            Responsible AI Research Lab at The University of Queensland, Australia
           </p>
           <h1 className="text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
             Building AI for public good.
